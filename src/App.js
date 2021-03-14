@@ -1,10 +1,24 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const App = () => {
 
+  const [notes, setNotes] = useState([])
+
+
+
   return (
     <div>
-      <h1> Hi, I'm React!</h1>
+      <form>
+        <input id="title" name="note" type="text" placeholder="enter title"/>
+         <br/>
+         <br/> 
+         <textarea id="body" name="des" type="text" placeholder="enter description"/> 
+         <br/> 
+         <br/> 
+         <input type="Submit"/> 
+         <br/> 
+         <br/>
+      </form>
     </div>
   )
 
