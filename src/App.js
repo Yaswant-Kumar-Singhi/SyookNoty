@@ -53,6 +53,7 @@ const App = () => {
     
       {notes.map((note) => (
         <div key={note.id}>
+          <ol>
           {note.id !== noteEditing ? (
             <div>
               {note.title} <span /> {note.body}
@@ -76,6 +77,7 @@ const App = () => {
           )}
           <button onClick={() => deleteNote(note.id)}>delete</button>
           <button onClick={() => setNoteEditing(note.id)}>edit</button>
+          </ol>
         </div>
       ))}
     </div>
