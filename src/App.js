@@ -40,6 +40,7 @@ const App = () => {
   };
 
   return (
+    <>
     <div className="App" id="box">
       <form onSubmit={addNote}>
         <input id="title" type="text" name="note" placeholder="Give a Title..." />
@@ -81,6 +82,8 @@ const App = () => {
         </div>
       ))}
     </div>
+    <div id="msg"> <h3>This site can be viewed in mobile view only. </h3></div>
+    </>
   );
 };
  
