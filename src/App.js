@@ -40,22 +40,22 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    <div className="App" id="box">
       <form onSubmit={addNote}>
-        <input id="title" type="text" name="note" placeholder="enter title" />
+        <input id="title" type="text" name="note" placeholder="Give a Title..." />
         <br />
         <br />
-        <textarea id="body" type="text" name="des" placeholder="enter des" />
+        <textarea id="body" type="text" name="des" placeholder="Provide a description..." maxLength="200" />
         <br />
         <br />
         <input type="Submit" />
       </form>
-
+    
       {notes.map((note) => (
         <div key={note.id}>
           {note.id !== noteEditing ? (
             <div>
-              {note.title} <br /> {note.body}
+              {note.title} <span /> {note.body}
             </div>
           ) : (
             <form onSubmit={(e) => submitEdits(e, note.id)}>

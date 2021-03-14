@@ -11,3 +11,53 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@media only screen and (max-width: 500px){
+  body{
+    background-color: lightblue;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    height: 100vh;
+  }
+  #box{
+    top:3%;
+    left: 15%;
+    display: block;
+    position: absolute;
+    padding: 1rem 4rem 1rem 1rem;
+    
+  }
+  input[type="text"]{
+    text-align: center;
+    display: block;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 10px 10px 10px 8px;
+    width: 100%;
+    resize: none;
+    font-family: inherit;
+  }
+  textarea[type="text"]{
+    text-align: center;
+    display: block;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 100%;
+    resize: none;
+    font-family: inherit;
+  }
+  input[type="Submit"]{
+    text-align: center; 
+    display: block;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 100%;
+    resize: none;
+    font-family: inherit;
+  }
+
+}
